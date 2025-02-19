@@ -2854,11 +2854,11 @@ textarea.form-control-lg {
   --bs-btn-border-color: #A64C4C;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #8a3f3f;
-  --bs-btn-hover-border-color: #50817e;
+  --bs-btn-hover-border-color: #A64C4C;
   --bs-btn-focus-shadow-rgb: 123, 175, 172;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #50817e;
-  --bs-btn-active-border-color: #4b7976;
+  --bs-btn-active-bg: #A64C4C;
+  --bs-btn-active-border-color: #A64C4C;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #A64C4C;
@@ -10999,7 +10999,7 @@ body {
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(#ffff, 80%);
   outline: none;
   background-color: transparent;
 }
