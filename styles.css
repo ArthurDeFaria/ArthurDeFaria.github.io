@@ -466,3 +466,113 @@ main .buttons a:hover {
 .mobile-nav-toggle .fa-xmark {
     display: none;
 }
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 0;
+}
+
+/* Container da Imagem com efeito de moldura */
+.about-image-wrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    flex-shrink: 0;
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* A moldura colorida atrás da foto */
+.about-frame {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito Hover na foto */
+.about-image-wrapper:hover img {
+    transform: translate(-5px, -5px);
+}
+.about-image-wrapper:hover .about-frame {
+    transform: translate(5px, 5px);
+}
+
+/* Coluna de Texto */
+.about-text-column {
+    max-width: 550px;
+}
+
+.section-tag {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.about-text-column h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.about-text-column p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+}
+
+.about-buttons .btn-primary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.about-buttons .btn-primary:hover {
+    background-color: #003ECC;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .about-image-wrapper {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    .about-frame {
+        top: 15px;
+        left: 15px;
+    }
+}

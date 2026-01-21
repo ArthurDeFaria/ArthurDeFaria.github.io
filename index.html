@@ -65,11 +65,16 @@
 
     <section id="about">
         <div class="container about-container">
-            <div class="about-image-column" data-aos="fade-right">
-                <img src="https://avatars.githubusercontent.com/u/128834352?s=400&u=e8be85e0cb6885a4b7168a0befcb37ea88552f4a&v=4" alt="Foto de Arthur De Faria">
+            <div class="about-image-wrapper" data-aos="fade-right">
+                <div class="about-frame"></div>
+                <img src="https://avatars.githubusercontent.com/u/128834352?v=4" alt="Foto de Arthur De Faria">
             </div>
             <div class="about-text-column" data-aos="fade-left">
-                <h2>Sobre Mim</h2>
+                <span class="section-tag">Sobre</span>
+                <h2>Analista de Sistemas & Desenvolvedor Backend</h2>
+                <p>
+                    Olá! Me chamo Arthur De Faria. Sou um profissional formado em <strong>Análise e Desenvolvimento de Sistemas pelo IFSP</strong>, apaixonado pela engenharia de software e arquitetura de sistemas.
+                </p>
                 <p>
                     Como desenvolvedor Fullstack com forte especialização em Backend (Java/Spring), eu crio arquiteturas robustas sem perder de vista a experiência do usuário final. Minha bagagem com React e Next.js me permite desenhar APIs que o time de Frontend adora consumir, evitando gargalos de integração.
                 </p>
@@ -194,6 +199,27 @@
                     </div>
                 </article>
                 
+                <article class="projeto-card" data-aos="fade-up">
+                    <div class="projeto-imagem">
+                        <img src="https://placehold.co/600x340/1a1a1a/FFF?text=Architecture+RabbitMQ" alt="Arquitetura do Projeto">
+                    </div>
+                    <div class="projeto-conteudo">
+                        <h3 class="projeto-titulo">Microsserviço de Notificações Resiliente</h3>
+                        <p class="projeto-descricao">
+                            Sistema de envio de e-mails tolerante a falhas projetado para alta disponibilidade. Implementa arquitetura orientada a eventos com <strong>RabbitMQ</strong>, utiliza <strong>Retry Pattern</strong> com backoff exponencial e <strong>Dead Letter Queues (DLQ)</strong> para garantir zero perda de dados.
+                        </p>
+                        <ul class="projeto-techs">
+                            <li>Java 21</li>
+                            <li>Spring Boot 3</li>
+                            <li>RabbitMQ</li>
+                            <li>MongoDB</li>
+                            <li>Docker</li>
+                        </ul>
+                        <div class="projeto-links">
+                            <a href="https://github.com/ArthurDeFaria/notification-service" target="_blank"><i class="fa-solid fa-code"></i> View Code</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
